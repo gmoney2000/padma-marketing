@@ -1,0 +1,39 @@
+# Padma
+
+> The central system electrical and lighting rep agencies actually need. One platform that replaces the four or five disconnected tools their teams currently juggle.
+
+## About
+Padma is a B2B SaaS platform built specifically for electrical and lighting manufacturer rep agencies. It consolidates CRM, quoting, orders, BOMs, submittals, commissions, project management, campaigns, and direct manufacturer integrations into one connected system. Built by Greg Drysdale, who spent 25+ years inside an electrical and lighting rep agency, living in the software every day. Padma is a product of DyGarn Solutions, a Halifax, Nova Scotia software development and data consulting practice.
+
+## What It Does
+- CRM: pipeline, contacts, companies, auto-linked emails, quotes, and orders
+- Quotes: multi-distributor, multi-manufacturer, engineer-matched, with markup math built in
+- Orders: quote-to-PO in one click, with distributor breakouts and buy/sell handling
+- Quote-to-Order: full end-to-end lifecycle, including buy/sell and commission-only modes
+- Buy/Sell: take title to goods when the deal calls for it, full PO and inventory handling
+- BOMs: auto-derived from quotes, manufacturer cross-matching, submittal-ready
+- Submittals: client-branded PDFs with cover sheet, cut sheets, addendums, table of contents
+- Commissions: buy/sell, distributor breakouts, reconciliation
+- Project Management: track every project from spec to install in one source of truth
+- Campaigns: targeted outbound to manufacturers, distributors, and customers
+- Smart Parsing: quotes, orders, and BOMs read on ingest, less typing and fewer errors
+- Custom Dashboards: per-role views for owners, quoters, and outside reps
+- Knowledge Base: built-in agency reference and chatbot-style help
+- Themes and Branding: per-tenant white-label appearance
+- Roles and Permissions: granular access control by user role
+- Price Lists: manufacturer-specific pricing with multipliers
+- Manufacturer Integrations: direct API tie-ins to the manufacturers you represent, built for you
+- Custom Add-Ons: anything missing from the platform, DyGarn builds for your agency without enterprise pricing
+
+## Who It Is For
+Owner-operators, operations leads, and IT leads at electrical and lighting manufacturer rep agencies. Often the same person wearing all three hats. Agencies currently running on Oasis, spreadsheets, email, and a patchwork of disconnected tools.
+
+## Contact
+- Website: https://padmahq.com
+- Email: greg@dygarn.com
+- Demo booking: https://calendly.com/greg-dygarn/new-meeting
+- Parent company: DyGarn Solutions, Halifax, Nova Scotia, Canada
+- Parent company website: https://dygarn.com
+
+## Key Pages
+- Home / landing: https://padmahq.com/
