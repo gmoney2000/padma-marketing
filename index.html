@@ -245,17 +245,7 @@ tailwind.config = {
     color: var(--soft);
     line-height: 1.55;
   }
-  .mcard .preview-cue {
-    margin-top: 14px;
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 11.5px; font-weight: 600;
-    letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--muted);
-    opacity: 0;
-    transform: translateY(4px);
-    transition: opacity 260ms, transform 260ms, color 260ms;
-  }
-  .mcard:hover .preview-cue { opacity: 1; transform: translateY(0); color: var(--gold); }
+  .mcard .preview-cue { display: none; }
 
   /* Icon containers */
   .ico {
@@ -730,7 +720,7 @@ tailwind.config = {
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-20 max-w-3xl mx-auto">
       <span class="section-label">What's inside</span>
-      <h2 class="text-4xl md:text-6xl text-text mb-5 leading-[1.05]">Eighteen capabilities.<br><span class="text-gold">One login.</span></h2>
+      <h2 class="text-4xl md:text-6xl text-text mb-5 leading-[1.05]">Eighteen capabilities and counting.<br><span class="text-gold">One login.</span></h2>
       <p class="text-soft text-lg">Padma replaces the patchwork your team is on today. Here is everything that lives inside one system.</p>
     </div>
 
@@ -753,13 +743,7 @@ tailwind.config = {
         <div class="mcard" style="--accent:#b86a3a; --accent-glow:rgba(184,106,58,0.12);">
           <span class="ico ico-clay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
           <h3>Orders</h3>
-          <p>Quote to PO in one click. Distributor breakouts and buy/sell handled cleanly.</p>
-          <span class="preview-cue">Preview &rarr;</span>
-        </div>
-        <div class="mcard" style="--accent:#d4793a; --accent-glow:rgba(212,121,58,0.12);">
-          <span class="ico ico-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>
-          <h3>Quote-to-Order</h3>
-          <p>Full lifecycle end to end. Buy/sell or commission-only, your choice on every line.</p>
+          <p>Quote to PO in one click. Buy/sell or commission-only per line. Distributor breakouts handled cleanly.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
         <div class="mcard" style="--accent:#a8842c; --accent-glow:rgba(168,132,44,0.12);">
@@ -825,13 +809,13 @@ tailwind.config = {
         <div class="mcard" style="--accent:#7d9462; --accent-glow:rgba(125,148,98,0.12);">
           <span class="ico ico-sage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
           <h3>Smart Parsing</h3>
-          <p>Quotes, orders, and BOMs parsed on the way in. Trained on your agency, your manufacturers, your distributors, and your engineering firms, so the system learns the formats your reps actually deal with.</p>
+          <p>AI reads quotes, orders, BOMs, and emails as they land. Trained on your agency's specific manufacturers, distributors, and engineers.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
         <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.12);">
           <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
           <h3>Custom Dashboards</h3>
-          <p>Your KPIs your way. Per-role views for owners, quoters, outside reps, accounting.</p>
+          <p>Per-role dashboards for owners, quoters, outside reps, accounting. Pipeline, sales velocity, activity. Your KPIs your way.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
         <div class="mcard" style="--accent:#d4793a; --accent-glow:rgba(212,121,58,0.12);">
