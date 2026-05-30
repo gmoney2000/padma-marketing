@@ -495,7 +495,7 @@ tailwind.config = {
 <nav class="site">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
     <a href="/" class="flex items-center gap-3" aria-label="Padma home">
-      <svg viewBox="0 0 200 140" width="40" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Padma lotus" style="color: var(--gold)">
+      <svg viewBox="0 0 200 140" class="w-11 h-8 md:w-14 md:h-10 lg:w-16 lg:h-11" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Padma lotus" style="color: var(--gold)">
         <defs>
           <radialGradient id="hdr-petals" cx="50%" cy="100%" r="80%">
             <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
@@ -522,7 +522,7 @@ tailwind.config = {
           <circle cx="0" cy="-103" r="11" fill="url(#hdr-tip)"/>
         </g>
       </svg>
-      <span class="wordmark text-2xl text-text">Padma</span>
+      <span class="wordmark text-2xl md:text-3xl text-text">Padma</span>
       <span class="badge-dygarn hidden sm:inline pl-3 border-l border-line">A DyGarn product</span>
     </a>
     <ul class="hidden md:flex items-center gap-8 list-none text-[14px] font-medium">
@@ -532,11 +532,53 @@ tailwind.config = {
       <li><a href="#submittals" class="text-soft hover:text-text transition-colors">Submittals</a></li>
       <li><a href="#built-for-you" class="text-soft hover:text-text transition-colors">DyGarn</a></li>
     </ul>
-    <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-sm">See Padma in action
+    <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="hidden md:inline-flex btn btn-primary btn-sm">See Padma in action
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
     </a>
+    <button id="mobile-nav-toggle" aria-label="Open menu" aria-expanded="false" class="md:hidden p-2 -mr-2 text-text" type="button">
+      <svg id="mobile-nav-icon-open" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="mobile-nav-icon-close" class="hidden" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu dropdown -->
+  <div id="mobile-nav-menu" class="md:hidden hidden border-t border-line" style="background: color-mix(in srgb, var(--bgdeep) 92%, transparent); backdrop-filter: saturate(140%) blur(14px);">
+    <ul class="flex flex-col list-none px-6 pt-2 pb-3 text-[16px] font-medium">
+      <li><a href="#pain" class="block py-3 text-soft hover:text-text border-b border-line/50">Why now</a></li>
+      <li><a href="#ingestion" class="block py-3 text-soft hover:text-text border-b border-line/50">Ingestion</a></li>
+      <li><a href="#modules" class="block py-3 text-soft hover:text-text border-b border-line/50">Modules</a></li>
+      <li><a href="#submittals" class="block py-3 text-soft hover:text-text border-b border-line/50">Submittals</a></li>
+      <li><a href="#built-for-you" class="block py-3 text-soft hover:text-text">DyGarn</a></li>
+    </ul>
+    <div class="px-6 pb-5">
+      <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary w-full justify-center" style="display:flex;">See Padma in action
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
   </div>
 </nav>
+<script>
+  (function() {
+    var btn = document.getElementById('mobile-nav-toggle');
+    var menu = document.getElementById('mobile-nav-menu');
+    var iconOpen = document.getElementById('mobile-nav-icon-open');
+    var iconClose = document.getElementById('mobile-nav-icon-close');
+    if (!btn || !menu) return;
+    function setOpen(isOpen) {
+      menu.classList.toggle('hidden', !isOpen);
+      iconOpen.classList.toggle('hidden', isOpen);
+      iconClose.classList.toggle('hidden', !isOpen);
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    }
+    btn.addEventListener('click', function() {
+      setOpen(menu.classList.contains('hidden'));
+    });
+    menu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() { setOpen(false); });
+    });
+  })();
+</script>
 
 <main id="main">
 
@@ -582,14 +624,7 @@ tailwind.config = {
     <p class="text-muted text-base md:text-lg mb-12 max-w-2xl mx-auto">
       Built by someone who spent 25+ years inside an electrical and lighting rep agency, living in multiple software systems daily.
     </p>
-    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-      <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-stacked">
-        <span class="btn-head">See Padma in action</span>
-        <span class="btn-rule" aria-hidden="true"></span>
-        <span class="btn-sub">30 minutes with the founder
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </span>
-      </a>
+    <div class="flex items-center justify-center">
       <a href="#modules" class="btn btn-ghost btn-lg">
         See what's inside
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
@@ -853,6 +888,23 @@ tailwind.config = {
   </div>
 </section>
 
+<!-- ============= MID-PAGE CTA ============= -->
+<section class="py-16 md:py-20" style="background: linear-gradient(135deg, var(--bgdeep) 0%, color-mix(in srgb, var(--gold) 10%, var(--bgbase)) 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-bold text-text leading-tight" style="font-family:'Space Grotesk',sans-serif;">Want to see it running on your agency's data?</h2>
+      <p class="text-soft mt-2">No slide deck. Just the system, your scenarios.</p>
+    </div>
+    <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-stacked flex-shrink-0">
+      <span class="btn-head">See Padma in action</span>
+      <span class="btn-rule" aria-hidden="true"></span>
+      <span class="btn-sub">30 minutes with the founder
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
 <!-- ============= DEEP DIVE 2: SUBMITTALS ============= -->
 <section id="submittals" class="py-24 md:py-32 hero-glow">
   <div class="max-w-3xl mx-auto px-6">
@@ -911,11 +963,14 @@ tailwind.config = {
     <p class="text-soft text-lg md:text-xl mb-6 leading-relaxed">
       Padma is a DyGarn product. DyGarn is a <span class="hilite">software development and data consulting practice</span>, which means the people who built Padma will build your custom dashboards, integrations, or modules when you need them.
     </p>
+    <p class="text-soft text-lg md:text-xl mb-6 leading-relaxed">
+      Padma is led by <span class="hilite">Greg Drysdale</span>. 27 years in the electrical industry, 25+ inside rep agencies, with an IT and electronics background underneath.
+    </p>
     <p class="text-muted text-lg mb-12 leading-relaxed">
       No ticket queues. No enterprise pricing. Just Greg and the team. If your agency needs something specific to run the way you run, tell us. Custom work is included with every Padma engagement, scoped honestly, priced fairly.
     </p>
-    <a href="https://dygarn.com" target="_blank" rel="noopener" class="text-link">
-      More about DyGarn &nbsp;&rarr;
+    <a href="https://dygarn.com" target="_blank" rel="noopener" class="text-soft hover:text-text transition-colors text-sm">
+      More about DyGarn &rarr;
     </a>
   </div>
 </section>
