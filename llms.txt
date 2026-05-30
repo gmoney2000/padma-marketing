@@ -1,38 +1,51 @@
 # Padma
 
-> The central system electrical and lighting rep agencies actually need. One platform that replaces the four or five disconnected tools their teams currently juggle.
+> The central system electrical and lighting rep agencies have always wanted. Padma is your one system to operate the agency. And the tools you already trust integrate with Padma.
 
 ## About
-Padma is a B2B SaaS platform built specifically for electrical and lighting manufacturer rep agencies. It consolidates CRM, quoting, orders, BOMs, submittals, commissions, project management, campaigns, and direct manufacturer integrations into one connected system. Built by Greg Drysdale, who spent 25+ years inside an electrical and lighting rep agency, living in the software every day. Padma is a product of DyGarn Solutions, a Halifax, Nova Scotia software development and data consulting practice.
+Padma is a B2B SaaS platform built for electrical and lighting manufacturer rep agencies. It brings CRM, quoting, orders, BOMs, submittals, commissions, project management, manufacturer goals and budgets, campaigns, and direct manufacturer integrations into one connected system. Built from sticking points lived daily over 25 years inside electrical and lighting rep agencies, across inside rep, outside rep, owner, and heavy IT roles. Padma is a product of DyGarn Technical Solutions, a Halifax, Nova Scotia software development and data consulting practice.
 
 ## What It Does
-- CRM: pipeline, contacts, companies, auto-linked emails, quotes, and orders
+- CRM: pipeline, contacts, companies, every opportunity converts to a quote in one click, every quote tied to its account
 - Quotes: multi-distributor, multi-manufacturer, engineer-matched, with markup math built in
 - Orders: quote-to-PO in one click, with distributor breakouts and buy/sell handling
-- Quote-to-Order: full end-to-end lifecycle, including buy/sell and commission-only modes
+- Quote-to-Order: full end-to-end lifecycle, buy/sell or commission-only modes per line
 - Buy/Sell: take title to goods when the deal calls for it, full PO and inventory handling
 - BOMs: auto-derived from quotes, manufacturer cross-matching, submittal-ready
-- Submittals: client-branded PDFs with cover sheet, cut sheets, addendums, table of contents
-- Commissions: buy/sell, distributor breakouts, reconciliation
-- Project Management: track every project from spec to install in one source of truth
-- Campaigns: targeted outbound to manufacturers, distributors, and customers
-- Smart Parsing: quotes, orders, and BOMs read on ingest, less typing and fewer errors
-- Custom Dashboards: per-role views for owners, quoters, and outside reps
-- Knowledge Base: built-in agency reference and chatbot-style help
+- Submittals: client-branded PDFs with cover sheet, cut sheets, addendums, table of contents, auto-generated
+- Commissions: buy/sell reconciliation, distributor breakouts, statements that match invoices
+- Goals and Budgets: match your manufacturers' goals, budgets, and scorecards, track on-pace versus behind, drill from agency-wide down to a single quote
+- Project Management: every project tracked from spec to install in one source of truth
+- Campaigns: targeted outbound to manufacturers, distributors, and customers, reply tracking
+- Smart Parsing: quotes, orders, and BOMs parsed on the way in, trained on your agency, your manufacturers, your distributors, and your engineering firms
+- Custom Dashboards: per-role views for owners, quoters, outside reps, accounting
+- Knowledge Base: built-in agency reference and assistant, fully searchable
 - Themes and Branding: per-tenant white-label appearance
-- Roles and Permissions: granular access control by user role
-- Price Lists: manufacturer-specific pricing with multipliers
-- Manufacturer Integrations: direct API tie-ins to the manufacturers you represent, built for you
-- Custom Add-Ons: anything missing from the platform, DyGarn builds for your agency without enterprise pricing
+- Roles and Permissions: granular access by user role, team, and territory
+- Price Lists: manufacturer-specific pricing with multipliers, effective dates, SKU overrides
+- Manufacturer Integrations: direct API tie-ins for live pricing, order status, inventory checks, order entry
+- Tools You Already Trust: Padma sends quotes and emails through Outlook or Gmail, connects to accounting (QuickBooks, Sage, Xero), document storage, and e-signature
+- Custom Add-Ons: anything missing from the platform, the DyGarn team builds it in
+
+## Data Ingestion
+Padma is built for the document tangle rep agencies actually live in. Every file type, PDFs, spreadsheets, Word documents, and emails, coming in from distributors, contractors, engineers, end users, and manufacturers. Padma takes it all in and makes sense of it. Email ingestion is included with every tenant. Manufacturer-aware parsing is trained on each tenant's specific manufacturers, distributors, and engineering firms. Line card aware, so the system flags specs and RFQs against the right lines automatically. One central place for all manufacturer documents and information, searchable in seconds in Padma's knowledge base.
+
+## Trust and Infrastructure
+- Your data stays yours, exportable anytime, no lock-in
+- Granular access with role-based permissions by user, team, and territory
+- Built on certified infrastructure: SOC 2 Type 2 cloud hosting, daily backups, database-level tenant isolation, encryption at rest and in transit
 
 ## Who It Is For
-Owner-operators, operations leads, and IT leads at electrical and lighting manufacturer rep agencies. Often the same person wearing all three hats. Agencies currently running on Oasis, spreadsheets, email, and a patchwork of disconnected tools.
+Owner-operators, operations leads, and IT leads at electrical and lighting manufacturer rep agencies. Often the same person wearing all three hats. Agencies running on an aging quote system, spreadsheets, email, and a patchwork of disconnected tools.
+
+## How To Engage
+30 minutes with the founder. Direct walkthrough of the platform and what it would look like for your agency specifically. No slide deck. Regular check-ins after onboarding to learn your business and add what else would be beneficial to your system.
 
 ## Contact
 - Website: https://padmahq.com
 - Email: greg@dygarn.com
-- Demo booking: https://calendly.com/greg-dygarn/new-meeting
-- Parent company: DyGarn Solutions, Halifax, Nova Scotia, Canada
+- Book 30 minutes with the founder: https://calendly.com/greg-dygarn/new-meeting
+- Parent company: DyGarn Technical Solutions, Halifax, Nova Scotia, Canada
 - Parent company website: https://dygarn.com
 
 ## Key Pages

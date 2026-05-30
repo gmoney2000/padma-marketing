@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Padma | The central system electrical and lighting rep agencies actually need</title>
-<meta name="description" content="Padma is the central platform for electrical and lighting rep agencies. CRM, quotes, orders, BOMs, submittals, commissions, project management, and direct manufacturer integrations, in one system. Built by a 25-year industry insider. Book a 30-minute demo.">
+<title>Padma | The central system electrical and lighting rep agencies have always wanted</title>
+<meta name="description" content="Padma is your one system to operate the agency. Quotes, orders, BOMs, submittals, commissions, project management, manufacturer goals and budgets, and direct manufacturer integrations, all in one place. When you want to keep a tool you already trust, Padma connects to it. Built by a 25-year industry insider. Book 30 minutes with the founder.">
 <link rel="canonical" href="https://padmahq.com/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Padma">
-<meta property="og:title" content="Padma | The central system electrical and lighting rep agencies actually need">
+<meta property="og:title" content="Padma | The central system electrical and lighting rep agencies have always wanted">
 <meta property="og:description" content="One platform that replaces the four or five disconnected tools electrical and lighting rep agencies are juggling today. Built by a 25-year industry insider.">
 <meta property="og:url" content="https://padmahq.com/">
-<meta property="og:image" content="https://padmahq.com/brand_assets/padma-lotus-v4b-gold.svg">
+<meta property="og:image" content="https://padmahq.com/brand_assets/padma-lotus-p17-hourglass-strong.svg">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Padma | Central system for electrical and lighting rep agencies">
 <meta name="twitter:description" content="One platform replaces the four or five disconnected tools your agency is juggling.">
-<meta name="twitter:image" content="https://padmahq.com/brand_assets/padma-lotus-v4b-gold.svg">
+<meta name="twitter:image" content="https://padmahq.com/brand_assets/padma-lotus-p17-hourglass-strong.svg">
 
-<link rel="icon" type="image/svg+xml" href="/brand_assets/padma-lotus-v4b-gold.svg">
+<link rel="icon" type="image/svg+xml" href="/brand_assets/padma-lotus-p17-hourglass-strong.svg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,23 +57,25 @@ tailwind.config = {
 </script>
 
 <style>
+  /* Locked theme: Tangerine (orange accent on cool dark). */
   :root {
-    --bgdeep:  #0d100c;
-    --bgbase:  #151814;
-    --bgcard:  #1c211b;
-    --bgelev:  #252b24;
-    --line:    rgba(245,239,227,0.08);
-    --line-h:  rgba(245,239,227,0.18);
-    --text:    #f5efe3;
-    --soft:    #c9c8b8;
-    --muted:   #8a8b7a;
-    --gold:    #c8a142;
-    --goldd:   #a8842c;
-    --clay:    #b86a3a;
-    --sage:    #7d9462;
-    --amber:   #d4793a;
-    --brass:   #a8842c;
-    --hilite:  #d4b65c;
+    --bgdeep:  #1b2236;
+    --bgbase:  #2c344a;
+    --bgcard:  #353d54;
+    --bgelev:  #3e475f;
+    --line:    rgba(241,236,228,0.09);
+    --line-h:  rgba(241,236,228,0.22);
+    --text:    #f1ece4;
+    --soft:    #d4cfc4;
+    --muted:   #a8a297;
+    --gold:    #e8742a;
+    --goldd:   #b85620;
+    --hilite:  #ff9656;
+    --accent-rgb: 232, 116, 42;
+    --clay:    #e8742a;
+    --sage:    #6acba1;
+    --amber:   #ffa756;
+    --brass:   #b85620;
   }
   * { box-sizing: border-box; }
   html, body { overflow-x: hidden; }
@@ -113,9 +115,9 @@ tailwind.config = {
   .btn-primary {
     background: linear-gradient(180deg, var(--gold) 0%, var(--goldd) 100%);
     color: var(--bgdeep);
-    box-shadow: 0 2px 0 rgba(0,0,0,0.4), 0 10px 30px rgba(200,161,66,0.18);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.4), 0 10px 30px rgba(var(--accent-rgb),0.18);
   }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 0 rgba(0,0,0,0.4), 0 16px 40px rgba(200,161,66,0.28); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 0 rgba(0,0,0,0.4), 0 16px 40px rgba(var(--accent-rgb),0.28); }
   .btn-primary:active { transform: translateY(0) scale(0.98); }
   .btn-primary:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
   .btn-ghost {
@@ -127,10 +129,41 @@ tailwind.config = {
   .btn-lg { padding: 16px 28px; font-size: 17px; border-radius: 12px; }
   .btn-sm { padding: 10px 18px; font-size: 14px; }
 
+  /* Stacked CTA: big primary line + hairline + small sub-line (used in hero) */
+  .btn-stacked {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 36px;
+    border-radius: 14px;
+  }
+  .btn-stacked .btn-head {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    line-height: 1;
+  }
+  .btn-stacked .btn-rule {
+    width: 32px;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.45;
+  }
+  .btn-stacked .btn-sub {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    opacity: 0.85;
+    line-height: 1;
+  }
+
   /* Nav */
   nav.site {
     position: sticky; top: 0; z-index: 100;
-    background: rgba(13,16,12,0.7);
+    background: color-mix(in srgb, var(--bgdeep) 80%, transparent);
     backdrop-filter: saturate(140%) blur(14px);
     -webkit-backdrop-filter: saturate(140%) blur(14px);
     border-bottom: 1px solid var(--line);
@@ -151,15 +184,15 @@ tailwind.config = {
   /* Hero gradient backdrop */
   .hero-glow {
     background:
-      radial-gradient(1100px 600px at 80% -10%, rgba(200,161,66,0.13), transparent 60%),
-      radial-gradient(900px 500px at 15% 110%, rgba(184,106,58,0.10), transparent 60%),
-      radial-gradient(1400px 800px at 50% 50%, rgba(125,148,98,0.04), transparent 70%),
+      radial-gradient(1100px 600px at 80% -10%, rgba(var(--accent-rgb),0.16), transparent 60%),
+      radial-gradient(900px 500px at 15% 110%, rgba(var(--accent-rgb),0.10), transparent 60%),
+      radial-gradient(1400px 800px at 50% 50%, rgba(var(--accent-rgb),0.04), transparent 70%),
       var(--bgbase);
   }
   .deep-glow {
     background:
-      radial-gradient(900px 500px at 10% -10%, rgba(200,161,66,0.08), transparent 60%),
-      radial-gradient(900px 500px at 90% 110%, rgba(125,148,98,0.06), transparent 60%),
+      radial-gradient(900px 500px at 10% -10%, rgba(var(--accent-rgb),0.10), transparent 60%),
+      radial-gradient(900px 500px at 90% 110%, rgba(var(--accent-rgb),0.06), transparent 60%),
       var(--bgdeep);
   }
 
@@ -188,7 +221,7 @@ tailwind.config = {
     inset: 0;
     border-radius: 16px;
     pointer-events: none;
-    background: radial-gradient(400px 160px at 50% 0%, var(--accent-glow, rgba(200,161,66,0.08)), transparent 60%);
+    background: radial-gradient(400px 160px at 50% 0%, var(--accent-glow, rgba(var(--accent-rgb),0.10)), transparent 60%);
     opacity: 0;
     transition: opacity 320ms;
   }
@@ -289,7 +322,7 @@ tailwind.config = {
       0 1px 0 rgba(255,255,255,0.05) inset,
       0 0 0 1px rgba(0,0,0,0.4),
       0 30px 80px rgba(0,0,0,0.5),
-      0 60px 140px rgba(200,161,66,0.06);
+      0 60px 140px rgba(var(--accent-rgb),0.06);
     overflow: hidden;
   }
   .device-bar {
@@ -305,7 +338,7 @@ tailwind.config = {
   }
   .device-body { display: grid; grid-template-columns: 200px 1fr; min-height: 380px; }
   .device-side {
-    background: rgba(13,16,12,0.6);
+    background: color-mix(in srgb, var(--bgdeep) 65%, transparent);
     border-right: 1px solid var(--line);
     padding: 16px 12px;
     font-size: 12px;
@@ -320,7 +353,7 @@ tailwind.config = {
     padding: 6px 8px; border-radius: 6px;
     color: var(--soft); font-size: 12.5px;
   }
-  .device-side-item.active { background: rgba(200,161,66,0.10); color: var(--gold); }
+  .device-side-item.active { background: rgba(var(--accent-rgb),0.12); color: var(--gold); }
   .device-main { padding: 20px; }
 
   /* Floating callout */
@@ -357,7 +390,7 @@ tailwind.config = {
     font-size: 11px; font-weight: 600;
   }
   .mock-pill.green { background: rgba(125,148,98,0.18); color: #b3cf9a; }
-  .mock-pill.gold  { background: rgba(200,161,66,0.18); color: var(--hilite); }
+  .mock-pill.gold  { background: rgba(var(--accent-rgb),0.18); color: var(--hilite); }
   .mock-pill.clay  { background: rgba(184,106,58,0.18); color: #e09877; }
 
   /* Card grid container */
@@ -372,13 +405,13 @@ tailwind.config = {
   }
   .doc-card.active {
     border-color: var(--gold);
-    background: rgba(200,161,66,0.06);
+    background: rgba(var(--accent-rgb),0.08);
     color: var(--gold);
-    box-shadow: 0 0 0 1px rgba(200,161,66,0.4);
+    box-shadow: 0 0 0 1px rgba(var(--accent-rgb),0.4);
   }
 
   /* Links */
-  a.text-link { color: var(--gold); border-bottom: 1px solid rgba(200,161,66,0.4); transition: color 200ms, border-color 200ms; }
+  a.text-link { color: var(--gold); border-bottom: 1px solid rgba(var(--accent-rgb),0.4); transition: color 200ms, border-color 200ms; }
   a.text-link:hover { color: var(--hilite); border-color: var(--hilite); }
 
   /* Skip link */
@@ -416,7 +449,7 @@ tailwind.config = {
       "@id": "https://padmahq.com/#org",
       "name": "Padma",
       "url": "https://padmahq.com/",
-      "logo": "https://padmahq.com/brand_assets/padma-lotus-v4b-gold.svg",
+      "logo": "https://padmahq.com/brand_assets/padma-lotus-p17-hourglass-strong.svg",
       "description": "Padma is a B2B SaaS platform for electrical and lighting manufacturer rep agencies. CRM, quoting, orders, BOMs, submittals, commissions, project management, campaigns, and direct manufacturer integrations in one system.",
       "parentOrganization": {
         "@type": "Organization",
@@ -462,13 +495,31 @@ tailwind.config = {
 <nav class="site">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
     <a href="/" class="flex items-center gap-3" aria-label="Padma home">
-      <svg viewBox="0 0 200 140" width="40" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Padma lotus">
-        <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="#f5efe3"/>
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="#f5efe3"/>
-          <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="#c8a142"/>
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="#f5efe3"/>
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="#f5efe3"/>
+      <svg viewBox="0 0 200 140" width="40" height="28" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Padma lotus" style="color: var(--gold)">
+        <defs>
+          <radialGradient id="hdr-petals" cx="50%" cy="100%" r="80%">
+            <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+            <stop offset="0.5" stop-color="currentColor" stop-opacity="0.82"/>
+            <stop offset="1"   stop-color="currentColor" stop-opacity="0.55"/>
+          </radialGradient>
+          <linearGradient id="hdr-mid" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+            <stop offset="0.5" stop-color="currentColor" stop-opacity="0.40"/>
+            <stop offset="1"   stop-color="currentColor" stop-opacity="0.95"/>
+          </linearGradient>
+          <radialGradient id="hdr-tip" cx="50%" cy="50%" r="50%">
+            <stop offset="0"   stop-color="#ffffff"      stop-opacity="1"/>
+            <stop offset="0.4" stop-color="currentColor" stop-opacity="0.85"/>
+            <stop offset="1"   stop-color="currentColor" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="url(#hdr-petals)"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="url(#hdr-petals)"/>
+          <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="url(#hdr-mid)" stroke-width="5"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="url(#hdr-petals)"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="url(#hdr-petals)"/>
+          <circle cx="0" cy="-103" r="11" fill="url(#hdr-tip)"/>
         </g>
       </svg>
       <span class="wordmark text-2xl text-text">Padma</span>
@@ -481,7 +532,9 @@ tailwind.config = {
       <li><a href="#submittals" class="text-soft hover:text-text transition-colors">Submittals</a></li>
       <li><a href="#built-for-you" class="text-soft hover:text-text transition-colors">DyGarn</a></li>
     </ul>
-    <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Book a 30-min demo</a>
+    <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-sm">See Padma in action
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
   </div>
 </nav>
 
@@ -491,30 +544,51 @@ tailwind.config = {
 <section class="hero-glow text-text">
   <div class="max-w-7xl mx-auto px-6 pt-20 pb-28 md:pt-28 md:pb-36 text-center">
     <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-bgcard border border-line mb-10">
-      <svg viewBox="0 0 200 140" width="22" height="15" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="#f5efe3"/>
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="#f5efe3"/>
-          <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="#c8a142"/>
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="#f5efe3"/>
-          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="#f5efe3"/>
+      <svg viewBox="0 0 200 140" width="22" height="15" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--gold)">
+        <defs>
+          <radialGradient id="hero-petals" cx="50%" cy="100%" r="80%">
+            <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+            <stop offset="0.5" stop-color="currentColor" stop-opacity="0.82"/>
+            <stop offset="1"   stop-color="currentColor" stop-opacity="0.55"/>
+          </radialGradient>
+          <linearGradient id="hero-mid" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+            <stop offset="0.5" stop-color="currentColor" stop-opacity="0.40"/>
+            <stop offset="1"   stop-color="currentColor" stop-opacity="0.95"/>
+          </linearGradient>
+          <radialGradient id="hero-tip" cx="50%" cy="50%" r="50%">
+            <stop offset="0"   stop-color="#ffffff"      stop-opacity="1"/>
+            <stop offset="0.4" stop-color="currentColor" stop-opacity="0.85"/>
+            <stop offset="1"   stop-color="currentColor" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <g fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="url(#hero-petals)"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="url(#hero-petals)"/>
+          <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="url(#hero-mid)" stroke-width="5.5"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="url(#hero-petals)"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="url(#hero-petals)"/>
+          <circle cx="0" cy="-103" r="11" fill="url(#hero-tip)"/>
         </g>
       </svg>
       <span class="text-[12.5px] font-semibold tracking-wide text-soft">Built for electrical &amp; lighting rep agencies</span>
     </div>
     <h1 class="h1-mega text-5xl md:text-7xl lg:text-8xl mb-8 max-w-5xl mx-auto text-text">
-      The central system rep agencies <span class="text-gold">actually</span> need.
+      The central system rep agencies <span class="text-gold">have always wanted</span>.
     </h1>
     <p class="text-soft text-lg md:text-2xl mb-4 max-w-3xl mx-auto leading-snug">
-      Stop juggling four or five disconnected tools. <span class="hilite">Padma replaces them with one system.</span>
+      <span class="hilite">Padma is your one system to operate your business.</span> And the tools you already trust integrate with Padma.
     </p>
     <p class="text-muted text-base md:text-lg mb-12 max-w-2xl mx-auto">
-      Built by someone who spent 25+ years inside an electrical and lighting rep agency, living in the software every day.
+      Built by someone who spent 25+ years inside an electrical and lighting rep agency, living in multiple software systems daily.
     </p>
     <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-      <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-        Book a 30-min demo
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-stacked">
+        <span class="btn-head">See Padma in action</span>
+        <span class="btn-rule" aria-hidden="true"></span>
+        <span class="btn-sub">30 minutes with the founder
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </span>
       </a>
       <a href="#modules" class="btn btn-ghost btn-lg">
         See what's inside
@@ -530,171 +604,89 @@ tailwind.config = {
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-16 max-w-3xl mx-auto">
       <span class="section-label section-label-clay">Why now</span>
-      <h2 class="text-3xl md:text-5xl text-text mb-5">The patchwork is costing you deals.</h2>
-      <p class="text-soft text-lg">Every quote that goes out late, every commission that does not match the invoice, every spec re-typed three times. That is what running on disconnected tools actually costs.</p>
+      <h2 class="text-3xl md:text-5xl text-text mb-5">Your systems changed. Your software didn't.</h2>
+      <p class="text-soft text-lg">Your quote system has run the business for 20 years. It still gets deals out the door. But it can't see across the business. It doesn't know who owns the follow-up, what your manufacturers expect this quarter, or which quotes are slipping.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="pain-card">
         <div class="ico ico-amber mb-5">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
-        <h3>Oasis is showing its age.</h3>
+        <h3>Your quote system is aging out.</h3>
         <p>Built for a different era. Slow, dated, hard to extend, expensive to leave. Your team works around it, not through it.</p>
       </div>
       <div class="pain-card">
         <div class="ico ico-clay mb-5">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
         </div>
-        <h3>Your tools do not talk.</h3>
-        <p>CRM in one place, quotes in another, commissions in a spreadsheet, follow-ups in email. Nothing reconciles without manual work every Friday.</p>
+        <h3>The day lives outside of one system.</h3>
+        <p>You run quotes in one tool. Your CRM is in another. Reports get built in Excel. Follow-ups live in your inbox. Meetings happen with numbers read off three different screens. Nothing reconciles without manual work.</p>
       </div>
       <div class="pain-card">
         <div class="ico ico-brass mb-5">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
-        <h3>Commissions never agree.</h3>
-        <p>POs, invoices, distributor breakouts, buy/sell math. Always off by something. Always a fight at month-end.</p>
+        <h3>Goals slip before you see them.</h3>
+        <p>Manufacturer goals, quarterly budgets, scorecards. By the time you notice you are behind, the quarter is over. Jobs sit waiting for follow-up. Commissions show up a month or two late, always off by something.</p>
       </div>
     </div>
+    <p class="text-center text-text text-2xl md:text-3xl mt-16 font-display font-semibold tracking-tight"><span class="text-gold">Padma closes the gap.</span></p>
   </div>
 </section>
 
 <!-- ============= DEEP DIVE 1: DATA INGESTION ============= -->
 <section id="ingestion" class="py-24 md:py-32 hero-glow">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
+  <div class="max-w-3xl mx-auto px-6">
       <div>
         <span class="section-label">Data ingestion</span>
         <h2 class="text-4xl md:text-6xl text-text mb-6 leading-[1.05]">
-          Every document.<br>Every source.<br><span class="text-gold">Zero manual entry.</span>
+          Built for the <span class="text-gold">document tangle</span> your reps actually live in.
         </h2>
         <p class="text-soft text-lg mb-4">
-          Quotes, orders, invoices, commission statements, price sheets. Reps drown in documents from <span class="hilite">dozens of manufacturers.</span> Padma ingests it all.
+          Every file type. <span class="hilite">PDFs, spreadsheets, Word docs, emails.</span> Coming in from distributors, contractors, engineers, end users, and manufacturers.
         </p>
         <p class="text-soft text-lg mb-10">
-          <span class="hilite">Upload, email, API, or portal automation.</span> Data flows in and Padma's smart parser <span class="hilite">reads, classifies, and loads it</span> automatically.
+          Padma takes it all in and <span class="hilite">makes sense of it.</span>
         </p>
         <ul class="space-y-4">
           <li class="flex gap-3 items-start">
             <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c8a142" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            <span><strong class="text-text">Smart uploads.</strong> <span class="text-soft">Drop any PDF and Padma extracts the data.</span></span>
+            <span><strong class="text-text">Smart uploads.</strong> <span class="text-soft">Drop any file and Padma extracts the data.</span></span>
           </li>
           <li class="flex gap-3 items-start">
             <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c8a142" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            <span><strong class="text-text">Email ingestion.</strong> <span class="text-soft">Forward or auto-route docs from your inbox.</span></span>
+            <span><strong class="text-text">Email ingestion.</strong> <span class="text-soft">Emails arrive in any format and Padma takes them in.</span></span>
           </li>
           <li class="flex gap-3 items-start">
             <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c8a142" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            <span><strong class="text-text">Manufacturer-aware parsing.</strong> <span class="text-soft">Learned per (your agency, your mfr) format. The moat.</span></span>
+            <span><strong class="text-text">Manufacturer-aware parsing.</strong> <span class="text-soft">Trained on your data, across your agency, your manufacturers, your distributors, and your engineering firms. The moat.</span></span>
           </li>
           <li class="flex gap-3 items-start">
             <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c8a142" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            <span><strong class="text-text">Direct API connections.</strong> <span class="text-soft">For the manufacturers that have them, we wire them up.</span></span>
+            <span><strong class="text-text">Line card aware.</strong> <span class="text-soft">Your line card and your manufacturers' terms live in Padma's knowledge base. Specs and RFQs get flagged against the right lines automatically.</span></span>
           </li>
           <li class="flex gap-3 items-start">
             <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c8a142" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            <span><strong class="text-text">Covers everything.</strong> <span class="text-soft">Pricing, orders, invoices, commissions, statements.</span></span>
+            <span><strong class="text-text">Direct API connections.</strong> <span class="text-soft">For manufacturers that have them, we wire them up. Live pricing, order status, inventory, order entry, and more.</span></span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-gold/15 flex items-center justify-center">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#c8a142" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span><strong class="text-text">Covers everything.</strong> <span class="text-soft">Price lists, SPAs, stock programs, statements, project specs, and much more. All searchable in seconds in Padma's knowledge base.</span></span>
           </li>
         </ul>
       </div>
-
-      <!-- DEVICE FRAME with floating callouts -->
-      <div class="relative">
-        <div class="device">
-          <div class="device-bar">
-            <span class="device-dot"></span>
-            <span class="device-dot"></span>
-            <span class="device-dot"></span>
-            <span class="device-url">app.padmahq.com / ingest</span>
-          </div>
-          <div class="device-body">
-            <aside class="device-side">
-              <div class="device-side-label">Inbox</div>
-              <div class="device-side-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email rules</div>
-              <div class="device-side-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33"/></svg> Auto-route</div>
-              <div class="device-side-label">CRM</div>
-              <div class="device-side-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Pipeline</div>
-              <div class="device-side-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Activity</div>
-              <div class="device-side-label">Padma AI</div>
-              <div class="device-side-item active"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg> Upload</div>
-              <div class="device-side-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Connectors</div>
-            </aside>
-            <div class="device-main">
-              <div class="flex items-center justify-between mb-4">
-                <div>
-                  <div class="text-sm text-text font-semibold flex items-center gap-2">
-                    <span class="w-7 h-7 rounded-md bg-gold/15 flex items-center justify-center">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c8a142" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                    </span>
-                    Upload &amp; Configure
-                  </div>
-                  <div class="text-xs text-muted mt-1">Upload your document and optionally add instructions for processing</div>
-                </div>
-              </div>
-              <div class="flex gap-2 mb-4">
-                <span class="mock-pill gold">Smart Extraction</span>
-                <span class="mock-pill green">Context-Aware</span>
-                <span class="mock-pill clay">Mfr-aware</span>
-              </div>
-              <div class="text-[11px] uppercase tracking-widest text-muted mb-3">What are you uploading?</div>
-              <div class="grid grid-cols-4 gap-2 mb-4">
-                <div class="doc-card">Quote</div>
-                <div class="doc-card">Order</div>
-                <div class="doc-card">Acknowledgement</div>
-                <div class="doc-card active">Invoice</div>
-                <div class="doc-card">Statement</div>
-                <div class="doc-card">Price list</div>
-                <div class="doc-card">Cut sheet</div>
-                <div class="doc-card">Spec package</div>
-              </div>
-              <div class="border-2 border-dashed border-line rounded-xl p-6 text-center text-muted text-sm">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8a8b7a" stroke-width="2" class="mx-auto mb-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                Drop your file here<br><span class="text-[11px]">PDF, CSV, XLSX, EML</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Floating callouts -->
-        <div class="callout" style="top: -16px; right: -8px;">
-          <span class="callout-ico ico-sage">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
-          </span>
-          <div class="leading-tight">
-            <div class="font-semibold">4,847 docs parsed</div>
-            <div class="text-muted text-xs">this month</div>
-          </div>
-        </div>
-        <div class="callout" style="top: 38%; left: -32px;">
-          <span class="callout-ico ico-clay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </span>
-          <div class="leading-tight">
-            <div class="font-semibold">Email auto-ingestion</div>
-            <div class="text-muted text-xs">on for 6 mfrs</div>
-          </div>
-        </div>
-        <div class="callout" style="bottom: -20px; right: 28px;">
-          <span class="callout-ico ico-amber">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </span>
-          <div class="leading-tight">
-            <div class="font-semibold">12 manufacturer APIs live</div>
-            <div class="text-muted text-xs">+ 4 in pipeline</div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -711,10 +703,10 @@ tailwind.config = {
     <div class="mb-20">
       <span class="group-label">Run Your Agency</span>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
-        <div class="mcard" style="--accent:#c8a142; --accent-glow:rgba(200,161,66,0.12);">
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.12);">
           <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
           <h3>CRM</h3>
-          <p>Pipeline, contacts, companies. Every email, quote, and order auto-linked.</p>
+          <p>Pipeline, contacts, companies. Every opportunity, one click to quote. Every quote on the account.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
         <div class="mcard" style="--accent:#7d9462; --accent-glow:rgba(125,148,98,0.12);">
@@ -741,7 +733,7 @@ tailwind.config = {
           <p>Take title to goods when the deal calls for it. Full PO and inventory handling.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
-        <div class="mcard" style="--accent:#c8a142; --accent-glow:rgba(200,161,66,0.12);">
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.12);">
           <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
           <h3>BOMs</h3>
           <p>Auto-derived from quotes. Manufacturer cross-matching. Submittal-ready.</p>
@@ -759,7 +751,13 @@ tailwind.config = {
           <p>Buy/sell reconciliation, distributor breakouts, statements that match invoices.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
-        <div class="mcard" style="--accent:#c8a142; --accent-glow:rgba(200,161,66,0.12);">
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.12);">
+          <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/><circle cx="20" cy="9" r="1.5" fill="currentColor"/></svg></span>
+          <h3>Goals &amp; Budgets</h3>
+          <p>Match your manufacturers' goals, budgets, and scorecards. Track on pace, behind, by how much. Drill from agency-wide down to a single quote.</p>
+          <span class="preview-cue">Preview &rarr;</span>
+        </div>
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.12);">
           <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
           <h3>Project Management</h3>
           <p>Every project tracked from spec to install. One source of truth across the team.</p>
@@ -771,6 +769,17 @@ tailwind.config = {
           <p>Targeted outbound to manufacturers, distributors, and customers, reply tracking baked in.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
+        <div class="mcard xl:col-span-4" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.18); padding: 28px 32px; background: linear-gradient(135deg, var(--bgcard) 0%, color-mix(in srgb, var(--gold) 8%, var(--bgcard)) 100%);">
+          <div class="flex items-center gap-5 h-full">
+            <span class="ico ico-gold flex-shrink-0" style="width:56px;height:56px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="width:28px;height:28px;"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </span>
+            <div>
+              <h3 style="margin: 0 0 4px 0; font-size: 20px;">More modules, added regularly.</h3>
+              <p style="margin: 0; font-size: 14.5px;">We build new modules as our customers ask for them. Padma grows with the agencies that use it.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -781,10 +790,10 @@ tailwind.config = {
         <div class="mcard" style="--accent:#7d9462; --accent-glow:rgba(125,148,98,0.12);">
           <span class="ico ico-sage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></span>
           <h3>Smart Parsing</h3>
-          <p>Quotes, orders, and BOMs read on ingest. Less typing, fewer transcription errors.</p>
+          <p>Quotes, orders, and BOMs parsed on the way in. Trained on your agency, your manufacturers, your distributors, and your engineering firms, so the system learns the formats your reps actually deal with.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
-        <div class="mcard" style="--accent:#c8a142; --accent-glow:rgba(200,161,66,0.12);">
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.12);">
           <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
           <h3>Custom Dashboards</h3>
           <p>Your KPIs your way. Per-role views for owners, quoters, outside reps, accounting.</p>
@@ -808,7 +817,7 @@ tailwind.config = {
           <p>Granular access by user role. Outside rep sees their territory. Quoter sees the quoting tools.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
-        <div class="mcard" style="--accent:#c8a142; --accent-glow:rgba(200,161,66,0.12);">
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.12);">
           <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span>
           <h3>Price Lists</h3>
           <p>Manufacturer-specific pricing with multipliers, effective dates, and SKU-level overrides.</p>
@@ -820,17 +829,23 @@ tailwind.config = {
     <!-- Group 3: Yours to Extend -->
     <div>
       <span class="group-label clay">Yours to Extend</span>
-      <div class="grid md:grid-cols-2 gap-5">
+      <div class="grid md:grid-cols-3 gap-5">
         <div class="mcard" style="--accent:#b86a3a; --accent-glow:rgba(184,106,58,0.14);">
           <span class="ico ico-clay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
           <h3>Manufacturer Integrations</h3>
           <p>Direct API tie-ins to the manufacturers you represent. If they have a system, we build the integration.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.14);">
+          <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="7" y1="15" x2="9" y2="15"/><line x1="12" y1="15" x2="14" y2="15"/></svg></span>
+          <h3>Tools You Already Trust</h3>
+          <p>Padma sends your quotes and emails right through Outlook or Gmail. Connects to your accounting (QuickBooks, Sage, Xero), document storage, and e-signature. We don't replace the tools your team already runs on. Padma runs alongside them.</p>
+          <span class="preview-cue">Preview &rarr;</span>
+        </div>
         <div class="mcard" style="--accent:#d4793a; --accent-glow:rgba(212,121,58,0.14);">
           <span class="ico ico-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
           <h3>Custom Add-Ons</h3>
-          <p>Anything missing? We build it for your agency, without enterprise pricing and without a six-month roadmap delay.</p>
+          <p>Ever caught yourself thinking "I wish this software could just do this"? That's where Padma shines. We build it in.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
       </div>
@@ -840,85 +855,8 @@ tailwind.config = {
 
 <!-- ============= DEEP DIVE 2: SUBMITTALS ============= -->
 <section id="submittals" class="py-24 md:py-32 hero-glow">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
-      <!-- DEVICE FRAME -->
-      <div class="relative order-2 lg:order-1">
-        <div class="device">
-          <div class="device-bar">
-            <span class="device-dot"></span>
-            <span class="device-dot"></span>
-            <span class="device-dot"></span>
-            <span class="device-url">app.padmahq.com / submittals / SUB-2026-0428</span>
-          </div>
-          <div class="device-body" style="grid-template-columns: 1fr;">
-            <div class="device-main" style="background: linear-gradient(180deg, #f5efe3 0%, #ece6da 100%); color:#2b322a;">
-              <div class="bg-white border border-[#2b322a]/10 rounded-md shadow-sm p-6 mx-auto" style="max-width: 360px;">
-                <div class="flex items-center gap-2 mb-6">
-                  <svg viewBox="0 0 200 140" width="32" height="22" xmlns="http://www.w3.org/2000/svg">
-                    <g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
-                      <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="#2b322a"/>
-                      <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="#2b322a"/>
-                      <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="#c8a142"/>
-                      <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="#2b322a"/>
-                      <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="#2b322a"/>
-                    </g>
-                  </svg>
-                  <div>
-                    <div class="font-semibold text-[14px]" style="font-family:'Space Grotesk',sans-serif;">Demo Agency</div>
-                    <div class="text-[10px] uppercase tracking-widest text-[#6b6b5e]">A Padma showcase</div>
-                  </div>
-                </div>
-                <div class="text-[10px] uppercase tracking-widest text-[#6b6b5e] mb-1">Submittal Package</div>
-                <div class="text-[18px] font-bold text-[#2b322a] mb-3" style="font-family:'Space Grotesk',sans-serif; line-height:1.15;">Halifax Convention Centre &mdash; Lighting Spec Package</div>
-                <div class="text-[11px] text-[#6b6b5e] mb-4 leading-relaxed">Spec engineer: J. Hicks, P.Eng. &middot; Prepared: 2026-05-27 &middot; Revision: 2 &middot; Document SUB-2026-0428</div>
-                <div class="border-t border-[#2b322a]/10 pt-3 space-y-2">
-                  <div class="flex justify-between text-[11px]"><span class="text-[#6b6b5e]">Cover sheet</span><span class="font-semibold">p. 1</span></div>
-                  <div class="flex justify-between text-[11px]"><span class="text-[#6b6b5e]">Bill of materials</span><span class="font-semibold">p. 2</span></div>
-                  <div class="flex justify-between text-[11px]"><span class="text-[#6b6b5e]">Cut sheets, Type A</span><span class="font-semibold">p. 3-12</span></div>
-                  <div class="flex justify-between text-[11px]"><span class="text-[#6b6b5e]">Cut sheets, Type B</span><span class="font-semibold">p. 13-22</span></div>
-                  <div class="flex justify-between text-[11px]"><span class="text-[#6b6b5e]">Cross-reference notes</span><span class="font-semibold">p. 23</span></div>
-                  <div class="flex justify-between text-[11px]"><span class="text-[#6b6b5e]">Addendum &mdash; Rev 2</span><span class="font-semibold">p. 24</span></div>
-                </div>
-                <div class="mt-6 pt-3 border-t border-[#2b322a]/10 text-center">
-                  <div class="inline-block text-[9px] uppercase tracking-widest px-3 py-1 rounded bg-[#c8a142]/15 text-[#a8842c] font-semibold">Generated by Padma</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Floating callouts -->
-        <div class="callout" style="top: -18px; left: -10px;">
-          <span class="callout-ico ico-sage">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          </span>
-          <div class="leading-tight">
-            <div class="font-semibold">Your brand on every page</div>
-            <div class="text-muted text-xs">cover, cuts, addendums</div>
-          </div>
-        </div>
-        <div class="callout" style="top: 40%; right: -32px;">
-          <span class="callout-ico ico-gold">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </span>
-          <div class="leading-tight">
-            <div class="font-semibold">Generated in 8 seconds</div>
-            <div class="text-muted text-xs">average per package</div>
-          </div>
-        </div>
-        <div class="callout" style="bottom: -16px; left: 30px;">
-          <span class="callout-ico ico-clay">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          </span>
-          <div class="leading-tight">
-            <div class="font-semibold">Cross-references resolved</div>
-            <div class="text-muted text-xs">G.1.c logic baked in</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="order-1 lg:order-2">
+  <div class="max-w-3xl mx-auto px-6">
+      <div>
         <span class="section-label section-label-sage">Submittals</span>
         <h2 class="text-4xl md:text-6xl text-text mb-6 leading-[1.05]">
           Submittal-ready<br>in seconds.<br><span class="text-gold">Your brand on every page.</span>
@@ -962,7 +900,6 @@ tailwind.config = {
           </li>
         </ul>
       </div>
-    </div>
   </div>
 </section>
 
@@ -991,34 +928,107 @@ tailwind.config = {
         <span class="section-label section-label-amber">Who's behind it</span>
         <h2 class="text-3xl md:text-5xl text-text mb-6 leading-[1.05]">A 25-year industry insider,<br>not a Silicon Valley outsider.</h2>
         <p class="text-soft text-lg mb-4 leading-relaxed">
-          Greg Drysdale spent 25 years inside electrical and lighting rep agencies. 22 of those years <span class="hilite">living inside Oasis.</span> He led multiple Oasis migrations during his time at ELP. He knows what every screen, every report, and every workaround actually costs you.
+          Padma was built from <span class="hilite">sticking points lived daily</span> over 25 years inside electrical and lighting rep agencies. Inside rep, outside rep, owner, heavy IT background through many software systems and technology shifts. Every screen, every report, every workaround. Every line of Padma traces back to a moment in one of those chairs.
         </p>
         <p class="text-soft text-lg mb-4 leading-relaxed">
-          Padma is what he built when he was done watching agencies fight their software.
+          Those were ours. Yours may look completely different. You bring your team's actual frustrations to us, the DyGarn team adds them into Padma, and the system grows with you.
         </p>
         <p class="text-soft text-lg leading-relaxed">
-          You get the founder on your demo, on your onboarding, and on your support line. Not a chatbot. Not a sales engineer.
+          You get the founder on your walkthrough, on your onboarding, and on your support line. Not a chatbot. Not a sales engineer. Regular check-ins to get to know your business, see what's working, what's not, and what else you'd like to see in your system.
         </p>
       </div>
       <div class="md:col-span-2">
-        <div class="bg-bgcard border border-line rounded-2xl p-8" style="box-shadow: 0 30px 80px rgba(0,0,0,0.3);">
-          <span class="block text-xs font-bold tracking-widest uppercase text-gold mb-4">Who's using it</span>
-          <ul class="space-y-4 text-text">
+        <div class="bg-bgcard border border-line rounded-2xl p-8 text-center" style="box-shadow: 0 30px 80px rgba(0,0,0,0.3);">
+          <div class="flex justify-center mb-4">
+            <svg viewBox="0 0 200 140" width="64" height="45" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Padma lotus" style="color: var(--gold)">
+              <defs>
+                <radialGradient id="side-petals" cx="50%" cy="100%" r="80%">
+                  <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+                  <stop offset="0.5" stop-color="currentColor" stop-opacity="0.82"/>
+                  <stop offset="1"   stop-color="currentColor" stop-opacity="0.55"/>
+                </radialGradient>
+                <linearGradient id="side-mid" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+                  <stop offset="0.5" stop-color="currentColor" stop-opacity="0.40"/>
+                  <stop offset="1"   stop-color="currentColor" stop-opacity="0.95"/>
+                </linearGradient>
+                <radialGradient id="side-tip" cx="50%" cy="50%" r="50%">
+                  <stop offset="0"   stop-color="#ffffff"      stop-opacity="1"/>
+                  <stop offset="0.4" stop-color="currentColor" stop-opacity="0.85"/>
+                  <stop offset="1"   stop-color="currentColor" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
+                <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="url(#side-petals)"/>
+                <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="url(#side-petals)"/>
+                <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="url(#side-mid)" stroke-width="5"/>
+                <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="url(#side-petals)"/>
+                <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="url(#side-petals)"/>
+                <circle cx="0" cy="-103" r="11" fill="url(#side-tip)"/>
+              </g>
+            </svg>
+          </div>
+          <span class="block text-xs font-bold tracking-widest uppercase text-gold mb-4">Padma Today</span>
+          <ul class="space-y-4 text-text text-left">
             <li class="flex gap-3 items-start">
               <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
-              <span><strong class="text-text">Built alongside</strong> <span class="text-soft">lighting agencies in Atlantic Canada.</span></span>
+              <span><strong class="text-text">In production now.</strong></span>
             </li>
             <li class="flex gap-3 items-start">
               <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
-              <span><strong class="text-text">Live with</strong> <span class="text-soft">S&amp;D Lighting Group, Halifax.</span></span>
+              <span><strong class="text-text">Onboarding new tenants.</strong></span>
             </li>
             <li class="flex gap-3 items-start">
               <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
-              <span><strong class="text-text">First external tenants</strong> <span class="text-soft">onboarding now.</span></span>
+              <span><strong class="text-text">New modules shipping</strong> <span class="text-soft">regularly.</span></span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+              <span><strong class="text-text">Updates ship</strong> <span class="text-soft">the moment they're done.</span></span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+              <span><strong class="text-text">No upgrade fees.</strong> <span class="text-soft">No version lock-in.</span></span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+              <span><strong class="text-text">Zero lead time.</strong> <span class="text-soft">Always in stock.</span></span>
             </li>
           </ul>
-          <p class="text-sm text-muted mt-6 leading-relaxed">Early customers get founder-level attention, custom-fit onboarding, and a direct line to the people building the product.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= TRUST STRIP ============= -->
+<section class="py-20 md:py-24 deep-glow border-t border-line">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14 max-w-2xl mx-auto">
+      <span class="section-label">Trust</span>
+      <h2 class="text-3xl md:text-4xl text-text leading-tight">Your data. <span class="text-gold">Your rules.</span></h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+      <div class="text-center md:text-left">
+        <div class="flex md:justify-start justify-center mb-4">
+          <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 12 15 15"/></svg></span>
+        </div>
+        <h3 class="text-text text-lg font-semibold mb-2" style="font-family:'Space Grotesk',sans-serif;">Your data stays yours.</h3>
+        <p class="text-soft text-sm leading-relaxed">Exportable anytime. No lock-in.</p>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="flex md:justify-start justify-center mb-4">
+          <span class="ico ico-sage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        </div>
+        <h3 class="text-text text-lg font-semibold mb-2" style="font-family:'Space Grotesk',sans-serif;">Granular access.</h3>
+        <p class="text-soft text-sm leading-relaxed">Role-based permissions by user, team, and territory.</p>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="flex md:justify-start justify-center mb-4">
+          <span class="ico ico-clay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>
+        </div>
+        <h3 class="text-text text-lg font-semibold mb-2" style="font-family:'Space Grotesk',sans-serif;">Built on certified infrastructure.</h3>
+        <p class="text-soft text-sm leading-relaxed">SOC 2 Type 2 cloud hosting. Daily backups. Database-level tenant isolation. Encryption at rest and in transit.</p>
       </div>
     </div>
   </div>
@@ -1031,9 +1041,12 @@ tailwind.config = {
     <p class="text-soft text-lg md:text-xl mb-12 max-w-2xl mx-auto">
       Thirty minutes. We walk through the platform and what it would look like for your agency specifically. No slide deck.
     </p>
-    <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-      Book a 30-min demo
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-stacked">
+      <span class="btn-head">See Padma in action</span>
+      <span class="btn-rule" aria-hidden="true"></span>
+      <span class="btn-sub">30 minutes with the founder
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </span>
     </a>
     <p class="text-muted text-sm mt-8">Or email <a href="mailto:greg@dygarn.com" class="text-link">greg@dygarn.com</a></p>
   </div>
@@ -1046,26 +1059,44 @@ tailwind.config = {
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-sm">
     <div class="md:col-span-2">
       <div class="flex items-center gap-3 mb-4">
-        <svg viewBox="0 0 200 140" width="36" height="25" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
-            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="#f5efe3"/>
-            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="#f5efe3"/>
-            <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="#c8a142"/>
-            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="#f5efe3"/>
-            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="#f5efe3"/>
+        <svg viewBox="0 0 200 140" width="36" height="25" xmlns="http://www.w3.org/2000/svg" style="color: var(--gold)">
+          <defs>
+            <radialGradient id="ftr-petals" cx="50%" cy="100%" r="80%">
+              <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+              <stop offset="0.5" stop-color="currentColor" stop-opacity="0.82"/>
+              <stop offset="1"   stop-color="currentColor" stop-opacity="0.55"/>
+            </radialGradient>
+            <linearGradient id="ftr-mid" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0"   stop-color="currentColor" stop-opacity="1"/>
+              <stop offset="0.5" stop-color="currentColor" stop-opacity="0.40"/>
+              <stop offset="1"   stop-color="currentColor" stop-opacity="0.95"/>
+            </linearGradient>
+            <radialGradient id="ftr-tip" cx="50%" cy="50%" r="50%">
+              <stop offset="0"   stop-color="#ffffff"      stop-opacity="1"/>
+              <stop offset="0.4" stop-color="currentColor" stop-opacity="0.85"/>
+              <stop offset="1"   stop-color="currentColor" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <g fill="none" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
+            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" stroke="url(#ftr-petals)"/>
+            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" stroke="url(#ftr-petals)"/>
+            <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z" stroke="url(#ftr-mid)" stroke-width="5"/>
+            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" stroke="url(#ftr-petals)"/>
+            <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" stroke="url(#ftr-petals)"/>
+            <circle cx="0" cy="-103" r="11" fill="url(#ftr-tip)"/>
           </g>
         </svg>
         <span class="wordmark text-xl text-text">Padma</span>
         <span class="badge-dygarn pl-3 border-l border-line">A DyGarn product</span>
       </div>
-      <p class="text-soft leading-relaxed max-w-md">The central system electrical and lighting rep agencies actually need. One platform, replacing four or five disconnected tools.</p>
+      <p class="text-soft leading-relaxed max-w-md">The central system electrical and lighting rep agencies have always wanted. One place to operate the business, with the option to connect the tools you already trust.</p>
       <p class="text-muted text-xs mt-6">Padma means lotus in Sanskrit. The flower that rises through mud, clean.</p>
     </div>
     <div>
       <span class="text-text block font-semibold mb-3">Talk</span>
       <ul class="space-y-2 text-soft">
         <li><a href="mailto:greg@dygarn.com" class="hover:text-gold transition-colors">greg@dygarn.com</a></li>
-        <li><a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="hover:text-gold transition-colors">Book a 30-min demo</a></li>
+        <li><a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="hover:text-gold transition-colors">Book a walkthrough</a></li>
       </ul>
     </div>
     <div>
