@@ -1,0 +1,114 @@
+# Padma (full context)
+
+> Padma is the headquarters system for manufacturer rep agencies across electrical, lighting, mechanical, and plumbing lines. One connected platform that consolidates the four or five paid softwares most rep agencies stitch together today.
+
+## About Padma
+
+Padma is a B2B SaaS platform built for manufacturer rep agencies. It brings CRM, quoting, orders, BOMs, submittals, expense tracking, commissions, project management, manufacturer goals and budgets, campaigns, mobile field sales, live project reporting, and direct manufacturer integrations into one connected system.
+
+Padma was built from sticking points lived daily over 25 years inside manufacturer rep agencies, across inside rep, outside rep, owner, operations, and IT roles. It is a product of DyGarn Technical Solutions, a Halifax, Nova Scotia software development and data consulting practice.
+
+## What Padma Consolidates
+
+Rep agencies today typically pay for four or five disconnected softwares:
+
+- A quote and order system such as RepFabric or Oasis
+- A separate submittal and lighting quote tool such as Parspec
+- A separate expense tracking app such as Expensify, Nexonia, SAP Concur, Ramp, Rydoo, Zoho Expense, Brex, or BILL Spend and Expense
+- A separate CRM
+- A separate project reporting tool
+- Spreadsheets and email folders bridging the gaps
+
+Padma consolidates all of that into one system. One login, one source of truth, and the outside tools you already trust plug in on the side (email through Outlook or Gmail, accounting through QuickBooks, Sage, or Xero, plus document storage and e-signature).
+
+## What It Does
+
+- CRM: pipeline, contacts, companies. Every opportunity converts to a quote in one click. Every quote tied to its account.
+- Quotes: multi-distributor, multi-manufacturer, engineer-matched, with markup math built in.
+- Orders: full workflow from logging a sales call through building a quote, converting to an order, releasing product for shipping, and tracking commissions and sales all the way through.
+- Buy or Sell: take title to goods when the deal calls for it, or run commission-only per line.
+- BOMs: auto-derived from quotes, manufacturer cross-matching, submittal-ready.
+- Submittals: client-branded PDFs with cover sheet, table of contents, cut sheets, and addendums.
+- Commissions: distributor breakouts and statements that match invoices.
+- Goals and Budgets: match your manufacturers' goals and scorecards, on-pace vs behind, drill from agency-wide down to a single quote.
+- Project Management: every project tracked from spec to install in one source of truth.
+- Live Project Meetings: a live project meeting board so the whole team can work through the pipeline together in real time. Meeting mode in active development.
+- Mobile Field Sales: a mobile app for reps in the field. Log calls, capture expenses, check projects, and update opportunities without a laptop.
+- Expense Tracking: agency-native expense workflow with accountant portal, admin-all vs user-own visibility, and approval routing.
+- Campaigns: targeted outbound to manufacturers, distributors, and customers, with reply tracking.
+- Smart Parsing: quotes, orders, and BOMs parsed on ingestion, trained per tenant on that agency's specific manufacturers, distributors, and engineering firms.
+- Custom Dashboards: per-role views for owners, quoters, outside reps, and accounting.
+- Knowledge Base: built-in agency reference and assistant, fully searchable.
+- Themes and Branding: per-agency white-label appearance.
+- Roles and Permissions: granular access by user role, team, and territory.
+- Price Lists: manufacturer-specific pricing with multipliers, effective dates, and SKU overrides.
+- Manufacturer Integrations: direct API tie-ins for live pricing, order status, inventory checks, and order entry.
+- Tools You Already Trust: Padma sends quotes and emails through Outlook or Gmail, connects to accounting (QuickBooks, Sage, Xero), document storage, and e-signature.
+- Custom Add-Ons: anything missing from the platform, the DyGarn team builds it in.
+- New Features Added Regularly: the roadmap is driven by the agencies actually using Padma.
+
+## Who Padma Is For
+
+Manufacturer rep agencies across electrical, lighting, mechanical, and plumbing lines. Owner-operators, operations leads, and IT leads, sometimes the same person wearing all three hats. Agencies running on an aging quote system, spreadsheets, email, and a patchwork of disconnected tools.
+
+## Frequently Asked Questions
+
+### What is Padma?
+Padma is a headquarters system for manufacturer rep agencies. It brings the tools an agency uses every day into one connected platform: quoting, expense tracking, mobile field sales, live project reporting, commissions, campaigns, and more, with new features added regularly. Padma is a product of DyGarn Technical Solutions.
+
+### Who is Padma for?
+Manufacturer rep agencies across electrical, lighting, mechanical, and plumbing lines. Owner-operators, operations leads, and IT leads, sometimes the same person wearing all three hats.
+
+### Why was Padma built?
+Rep agencies typically pay for four or five disconnected softwares, one for quotes, another for CRM, another for expenses, another for reporting, another for the field, and none of them talk to each other. Padma was built to solve that. One system, one login, one source of truth, and the tools you already trust plug in on the side.
+
+### Does Padma replace the tools we already use?
+Only the ones you want gone. Padma sends quotes and emails through your existing email, connects to accounting, document storage, and e-signature. The tools you trust stay; Padma plugs into them.
+
+### Can Padma bring our existing data with us?
+Yes. Full data migration from existing quote systems, spreadsheets, PDFs, and email archives. Migration fidelity is our number one quality bar. Data is verified against source before go-live.
+
+### How does Padma handle the sales-to-shipping workflow?
+Padma covers the full lifecycle, from logging a sales call, through building a quote, converting to an order, releasing product for shipping, and tracking commissions and sales all the way through. Every step ties back to the account, the opportunity, and the rep who owned it.
+
+### What's in it for the field team?
+A mobile app built for reps in the field. Log calls, capture expenses, check projects, and update opportunities without opening a laptop.
+
+### What about project meetings?
+Padma has a live project meeting board where the whole team can see the pipeline in real time, work through it together, and keep everyone aligned. Meeting mode is actively in development.
+
+### Is our data safe?
+Yes. Your data stays yours, exportable anytime, no lock-in. Enterprise-grade cloud hosting with daily backups, tenant isolation, and encryption at rest and in transit. Granular role-based permissions by user, team, and territory.
+
+### What if something happens to the founder?
+Padma is backed by DyGarn Technical Solutions with a network of trusted developer partners. A written continuity plan is in place so that if the founder becomes unavailable, access, source code, and operations transfer to named partners under a triggered escrow arrangement. All of your data stays safe, protected by full row-level security gated by your own admins, and the platform continues to run without disruption.
+
+### How do we get started?
+30 minutes with a Padma team member. A working session to find out which of Padma's features line up with the real demands your agency is feeling today, and whether Padma is the right fit. No slide deck. Regular check-ins after onboarding to learn your business and add whatever else would strengthen your system.
+
+## Trust and Infrastructure
+
+- Your data stays yours, exportable anytime, no lock-in.
+- Granular role-based permissions by user, team, and territory.
+- Row-level security gated by your own admins.
+- Enterprise-grade cloud hosting with daily backups, tenant isolation, and encryption at rest and in transit.
+- Written business continuity plan with trusted developer partners under a triggered escrow arrangement.
+
+## How To Engage
+
+30 minutes with a Padma team member. A working session focused on which of Padma's features would matter most to your agency and whether one or more of them lines up with a demand you're feeling today. No slide deck. Regular check-ins after onboarding to learn your business and add whatever else would strengthen your system.
+
+## Contact
+
+- Website: https://padmahq.com
+- Email: greg@dygarn.com
+- Book 30 minutes with the Padma team: https://calendly.com/greg-dygarn/new-meeting
+- Parent company: DyGarn Technical Solutions, Halifax, Nova Scotia, Canada
+- Parent company website: https://dygarn.com
+
+## Key Pages
+
+- Home / landing: https://padmahq.com/
+- llms.txt (summary for AI systems): https://padmahq.com/llms.txt
+- llms-full.txt (full context for AI systems): https://padmahq.com/llms-full.txt
+- sitemap.xml: https://padmahq.com/sitemap.xml
