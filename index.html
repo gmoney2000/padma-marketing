@@ -31,7 +31,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Jim+Nightshade&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -418,9 +418,9 @@ tailwind.config = {
 
   /* Wordmark */
   .wordmark {
-    font-family: 'Space Grotesk', Inter, sans-serif;
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    font-family: 'Jim Nightshade', 'Space Grotesk', cursive;
+    font-weight: 400;
+    letter-spacing: 0;
   }
 
   /* Badge */
@@ -617,7 +617,7 @@ tailwind.config = {
           <circle cx="0" cy="-103" r="11" fill="url(#hdr-tip)"/>
         </g>
       </svg>
-      <span class="wordmark text-2xl md:text-3xl text-text">Padma</span>
+      <span class="wordmark text-3xl md:text-4xl text-text">Padma</span>
       <span class="badge-dygarn hidden sm:inline pl-3 border-l border-line">A DyGarn product</span>
     </a>
     <ul class="hidden md:flex items-center gap-8 list-none text-[14px] font-medium">
@@ -679,7 +679,13 @@ tailwind.config = {
 
 <!-- ============= HERO ============= -->
 <section class="hero-glow text-text">
-  <div class="max-w-7xl mx-auto px-6 pt-20 pb-28 md:pt-28 md:pb-36 text-center">
+  <div class="max-w-7xl mx-auto px-6 pt-20 pb-28 md:pt-28 md:pb-36 text-center relative">
+    <div class="hidden sm:block" style="position:absolute; top:72px; right:0; transform:rotate(5deg); z-index:5;">
+      <span style="display:inline-flex; align-items:center; gap:7px; background:linear-gradient(135deg, var(--gold), #d4793a); color:#160f04; font-weight:700; font-size:12.5px; letter-spacing:0.03em; padding:8px 16px; border-radius:999px; box-shadow:0 10px 28px rgba(212,121,58,0.40), inset 0 0 0 1px rgba(255,255,255,0.18);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 5.8L20 8l-4.7 3.6L17 18l-5-3.4L7 18l1.7-6.4L4 8l6.1-.2z"/></svg>
+        Added new features
+      </span>
+    </div>
     <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-bgcard border border-line mb-10">
       <svg viewBox="0 0 200 140" width="22" height="15" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="color: var(--gold)">
         <defs>
@@ -905,7 +911,7 @@ tailwind.config = {
     <div class="text-center mb-20 max-w-3xl mx-auto">
       <span class="section-label">What's inside</span>
       <h2 class="text-4xl md:text-6xl text-text mb-5 leading-[1.05]">Everything your agency needs.<br><span class="text-gold">In one place.</span></h2>
-      <p class="text-soft text-lg">Padma replaces the patchwork your team is on today. Eighteen modules so far, with more shipping as customers ask.</p>
+      <p class="text-soft text-lg">Padma replaces the patchwork your team is on today. Twenty modules so far, with more shipping as customers ask.</p>
     </div>
 
     <!-- Group 1: Run Your Agency -->
@@ -972,6 +978,12 @@ tailwind.config = {
           <p>Targeted outbound to manufacturers, distributors, and customers, reply tracking baked in.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
+        <div class="mcard" style="--accent:#d4793a; --accent-glow:rgba(212,121,58,0.12);">
+          <span class="ico ico-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+          <h3>Email</h3>
+          <p>Built right into the platform. Every quote, reply, and manufacturer thread sits on the project, sent through Outlook or Gmail. No separate inbox to babysit.</p>
+          <span class="preview-cue">Preview &rarr;</span>
+        </div>
         <div class="mcard xl:col-span-4" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.18); padding: 28px 32px; background: linear-gradient(135deg, var(--bgcard) 0%, color-mix(in srgb, var(--gold) 8%, var(--bgcard)) 100%);">
           <div class="flex items-center gap-5 h-full">
             <span class="ico ico-gold flex-shrink-0" style="width:56px;height:56px;">
@@ -1032,11 +1044,11 @@ tailwind.config = {
     <!-- Group 3: Yours to Extend -->
     <div>
       <span class="group-label clay">Yours to Extend</span>
-      <div class="grid md:grid-cols-3 gap-5">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
         <div class="mcard" style="--accent:#b86a3a; --accent-glow:rgba(184,106,58,0.14);">
           <span class="ico ico-clay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
           <h3>Manufacturer Integrations</h3>
-          <p>Direct API tie-ins to the manufacturers you represent. If they have a system, we build the integration.</p>
+          <p>Direct API tie-ins to the manufacturers you represent - live pricing, stock, and orders pulled straight in. Many already built, with more added regularly.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
         <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.14);">
@@ -1051,6 +1063,12 @@ tailwind.config = {
           <p>Ever caught yourself thinking "I wish this software could just do this"? That's where Padma shines. We build it in.</p>
           <span class="preview-cue">Preview &rarr;</span>
         </div>
+        <div class="mcard" style="--accent:var(--gold); --accent-glow:rgba(var(--accent-rgb),0.14);">
+          <span class="ico ico-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></span>
+          <h3>Third-Party CRMs</h3>
+          <p>Push opportunities up into Salesforce, Microsoft Dynamics, or whatever CRM your lines expect, even from a rep's phone. Your team works in one place; the CRM stays fed.</p>
+          <span class="preview-cue">Preview &rarr;</span>
+        </div>
       </div>
     </div>
   </div>
@@ -1062,6 +1080,9 @@ tailwind.config = {
   <div class="max-w-4xl mx-auto px-6 text-center">
     <span class="section-label">Why DyGarn</span>
     <h2 class="text-4xl md:text-6xl text-text mb-8 leading-[1.05]">Built for you,<br>not for the <span class="text-gold">average customer.</span></h2>
+    <p class="text-soft text-lg md:text-xl mb-6 leading-relaxed">
+      Every agency runs a little differently, and the one-off process always seems to end up in a spreadsheet off to the side. Tell us about yours - we build it into Padma as its own module, so it lives in the system with everything else instead of a file only one person can find.
+    </p>
     <p class="text-soft text-lg md:text-xl mb-6 leading-relaxed">
       Padma is a DyGarn product. DyGarn is a <span class="hilite">software development and data consulting practice</span>, which means the people who built Padma will build your custom dashboards, integrations, or modules when you need them.
     </p>
@@ -1329,7 +1350,7 @@ tailwind.config = {
             <circle cx="0" cy="-103" r="11" fill="url(#ftr-tip)"/>
           </g>
         </svg>
-        <span class="wordmark text-xl text-text">Padma</span>
+        <span class="wordmark text-2xl text-text">Padma</span>
         <span class="badge-dygarn pl-3 border-l border-line">A DyGarn product</span>
       </div>
       <p class="text-soft leading-relaxed max-w-md">The headquarters electrical and lighting rep agencies have always wanted. One place to operate the business, with the option to connect the tools you already trust.</p>
