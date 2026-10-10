@@ -34,6 +34,7 @@ Padma is built for the document tangle rep agencies actually live in. Every file
 - Your data stays yours, exportable anytime, no lock-in
 - Granular access with role-based permissions by user, team, and territory
 - Built on certified infrastructure: SOC 2 Type 2 cloud hosting, daily backups, database-level tenant isolation, encryption at rest and in transit
+- Data is stored in the country you operate in: Canada for Canadian agencies, the United States for US agencies
 
 ## Who It Is For
 Owner-operators, operations leads, and IT leads at electrical and lighting manufacturer rep agencies. Often the same person wearing all three hats. Agencies running on an aging quote system, spreadsheets, email, and a patchwork of disconnected tools.

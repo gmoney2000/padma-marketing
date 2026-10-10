@@ -78,7 +78,7 @@ A mobile app built for reps in the field. Log calls, capture expenses, check pro
 Padma has a live project meeting board where the whole team can see the pipeline in real time, work through it together, and keep everyone aligned. Meeting mode is actively in development.
 
 ### Is our data safe?
-Yes. Your data stays yours, exportable anytime, no lock-in. Enterprise-grade cloud hosting with daily backups, tenant isolation, and encryption at rest and in transit. Granular role-based permissions by user, team, and territory.
+Yes. Your data stays yours, exportable anytime, no lock-in. Enterprise-grade cloud hosting with daily backups, tenant isolation, and encryption at rest and in transit. Your data is stored in the country you operate in: in Canada for Canadian agencies, in the United States for US agencies. Granular role-based permissions by user, team, and territory.
 
 ### What if something happens to the founder?
 Padma is backed by DyGarn Technical Solutions with a network of trusted developer partners. A written continuity plan is in place so that if the founder becomes unavailable, access, source code, and operations transfer to named partners under a triggered escrow arrangement. All of your data stays safe, protected by full row-level security gated by your own admins, and the platform continues to run without disruption.
@@ -92,6 +92,7 @@ Padma is backed by DyGarn Technical Solutions with a network of trusted develope
 - Granular role-based permissions by user, team, and territory.
 - Row-level security gated by your own admins.
 - Enterprise-grade cloud hosting with daily backups, tenant isolation, and encryption at rest and in transit.
+- Data is stored in the country you operate in: Canada for Canadian agencies, the United States for US agencies.
 - Written business continuity plan with trusted developer partners under a triggered escrow arrangement.
 
 ## How To Engage
