@@ -181,7 +181,20 @@ tailwind.config = {
   }
 
   /* Section labels */
-  .section-label {
+  /* NEMRA (Service Provider + NEMRA27). Their logos are blue / green / navy on transparent, so they sit on a light card. */
+.nemra-chip, .nemra-foot { display:inline-flex; align-items:center; gap:10px; color:var(--soft); font-size:13px; text-decoration:none; }
+.nemra-chip { padding:8px 22px 8px 8px; font-size:16px; gap:14px; border-radius:999px; background:var(--bgcard); border:1px solid var(--line); transition:border-color .2s; }
+.nemra-chip:hover { border-color:var(--line-h); color:var(--text); }
+.nemra-chip strong { color:var(--text); font-weight:600; }
+.nemra-chip-logo { display:inline-flex; align-items:center; background:#f7f3ea; border-radius:999px; padding:6px 16px; }
+.nemra-chip-logo img { height:18px; width:auto; display:block; }
+.nemra-chip .nemra-chip-logo img { height:32px; }
+@media (max-width:640px) { .nemra-chip { font-size:14px; padding:6px 14px 6px 6px; } .nemra-chip .nemra-chip-logo img { height:26px; } }
+.nemra-foot { margin-top:18px; }
+.nemra-card { background:#f7f3ea; border-radius:20px; padding:28px 28px 22px; box-shadow:0 30px 80px rgba(0,0,0,0.3); }
+.nemra-card-foot { display:flex; align-items:center; justify-content:center; gap:12px; margin-top:18px; padding-top:16px; border-top:1px solid rgba(27,34,54,0.12); color:#2c344a; font-weight:700; font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+.nemra-card-foot img { height:30px; width:auto; }
+.section-label {
     font-size: 12px; font-weight: 700;
     letter-spacing: 0.18em; text-transform: uppercase;
     color: var(--gold);
@@ -733,6 +746,10 @@ tailwind.config = {
       </a>
     </div>
     <p class="text-muted text-sm mt-8">If something is missing, we'll build it. You work directly with the team that builds it, not a ticket queue.</p>
+      <a href="#nemra27" class="nemra-chip mt-6" aria-label="Padma is a NEMRA Service Provider - see us at NEMRA27">
+        <span class="nemra-chip-logo"><img src="/brand_assets/nemra-logo.png" alt="NEMRA" width="64" height="24"></span>
+        <span>Approved <strong>NEMRA Service Provider</strong> - see us at NEMRA27 in Dallas</span>
+      </a>
 
     <!-- HERO SCREENSHOT SLOT: drop a dashboard hero shot here.
          Recommended: 1800x1100 PNG, file at /brand_assets/screenshot-hero.png.
@@ -743,6 +760,35 @@ tailwind.config = {
         <span class="device-url">padma.app / dashboard</span>
       </div>
       <img src="/brand_assets/screenshot-hero.png" alt="Padma dashboard for a manufacturer's rep agency" class="w-full h-auto block" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ============= NEMRA27 (until the show, Feb 2027) ============= -->
+<section id="nemra27" class="py-20 md:py-24 deep-glow border-t border-b border-line">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-5 gap-10 md:gap-14 items-center">
+    <div class="md:col-span-2">
+      <div class="nemra-card">
+        <img src="/brand_assets/nemra27-logo.png" alt="NEMRA27 - Setting the Standard" class="w-full h-auto block" width="1000" height="617" loading="lazy">
+        <div class="nemra-card-foot">
+          <img src="/brand_assets/nemra-logo.png" alt="NEMRA" width="92" height="34" loading="lazy">
+          <span>Service Provider</span>
+        </div>
+      </div>
+    </div>
+    <div class="md:col-span-3">
+      <span class="section-label section-label-amber">See us in Dallas</span>
+      <h2 class="text-3xl md:text-5xl text-text mb-6 leading-[1.05]">Padma is an approved <span class="text-gold">NEMRA Service Provider</span>.</h2>
+      <p class="text-soft text-lg mb-4 leading-relaxed">
+        Find us in the <span class="hilite">Service Provider Showcase at NEMRA27</span> - Hilton Anatole, Dallas, January 31 to February 3, 2027.
+      </p>
+      <p class="text-soft text-lg mb-8 leading-relaxed">
+        Book 30 minutes before you fly in. We'll walk through Padma using your own lines, quotes and commissions - built by a rep, for reps.
+      </p>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="https://calendly.com/greg-dygarn/new-meeting" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book a meeting at NEMRA27</a>
+        <a href="https://www.nemra.org/" target="_blank" rel="noopener" class="text-soft hover:text-gold transition-colors text-sm">About NEMRA</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1172,7 +1218,11 @@ tailwind.config = {
             <li class="flex gap-3 items-start">
               <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
               <span><strong class="text-text">In production now.</strong></span>
-            </li>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
+<span><strong class="text-text">Approved NEMRA Service Provider.</strong> <span class="text-soft">See us at NEMRA27 in Dallas.</span></span>
+</li>
             <li class="flex gap-3 items-start">
               <span class="mt-1.5 w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0"></span>
               <span><strong class="text-text">Onboarding new tenants.</strong></span>
@@ -1376,8 +1426,12 @@ tailwind.config = {
           </g>
         </svg>
         <span class="wordmark text-2xl text-text">Padma</span>
-        <span class="badge-dygarn pl-3 border-l border-line">A DyGarn product</span>
+                <span class="badge-dygarn pl-3 border-l border-line">A DyGarn product</span>
       </div>
+      <a href="https://www.nemra.org/" target="_blank" rel="noopener" class="nemra-foot" aria-label="NEMRA Service Provider">
+        <span class="nemra-chip-logo"><img src="/brand_assets/nemra-logo.png" alt="NEMRA" width="64" height="24" loading="lazy"></span>
+        <span>NEMRA Service Provider</span>
+      </a>
       <p class="text-soft leading-relaxed max-w-md">The headquarters manufacturer's rep agencies have always wanted - electrical, lighting, utility, mechanical, HVAC, and plumbing. One place to operate the business, with the option to connect the tools you already trust.</p>
     </div>
     <div>
