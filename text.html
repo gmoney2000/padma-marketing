@@ -91,7 +91,7 @@ tailwind.config = { theme: { extend: {
     <p id="status" role="status" class="text-sm" style="min-height:1.5em; color:var(--soft);"></p>
   </form>
 
-  <p class="text-sm mt-6" style="color:var(--muted);">Agreeing is not a condition of buying anything. We do not sell mobile numbers or share them with third parties for their marketing. See our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms</a>.</p>
+  <p class="text-sm mt-6" style="color:var(--muted);">Agreeing is not a condition of buying anything. We do not sell mobile numbers or share them with third parties for their marketing. See our <a href="/privacy" style="color:var(--gold);">Privacy Policy</a> and <a href="/terms" style="color:var(--gold);">Terms</a>.</p>
 </main>
 
 <style>
@@ -141,5 +141,7 @@ tailwind.config = { theme: { extend: {
   </div>
 </footer>
 
+<!-- First-party analytics: anonymous visit tracking + outreach attribution. See ops.dygarn.com/dashboard/visitors -->
+<script src="https://ops.dygarn.com/track.js" defer></script>
 </body>
 </html>
