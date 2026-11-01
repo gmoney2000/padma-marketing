@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9R0NBFYL6T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9R0NBFYL6T');
+</script>
+<title>Text Padma</title>
+<meta name="description" content="Leave your mobile number to hear from Padma by text, or text us at 877-600-3707.">
+<link rel="canonical" href="https://padmahq.com/text">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Jim+Nightshade&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { bgdeep:'#1b2236', bgbase:'#2c344a', bgcard:'#353d54', line:'rgba(241,236,228,0.09)', text:'#f1ece4', soft:'#d4cfc4', muted:'#a8a297', gold:'#e8742a', hilite:'#ff9656' },
+  fontFamily: { display:['"Space Grotesk"','Inter','sans-serif'], body:['Inter','sans-serif'] },
+}}}
+</script>
+<style>
+  :root {
+    --bgdeep:#1b2236; --bgbase:#2c344a; --bgcard:#353d54; --line:rgba(241,236,228,0.09);
+    --text:#f1ece4; --soft:#d4cfc4; --muted:#a8a297; --gold:#e8742a; --hilite:#ff9656;
+  }
+  * { box-sizing:border-box; }
+  html, body { overflow-x:hidden; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bgbase); color:var(--text); line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .wordmark { font-family:'Jim Nightshade',cursive; }
+  .font-display { font-family:'Space Grotesk',Inter,sans-serif; }
+  a { color:var(--gold); text-decoration:none; }
+  a:hover { color:var(--hilite); }
+  .prose h2 { font-family:'Space Grotesk',sans-serif; font-size:1.3rem; font-weight:600; color:var(--text); margin:2.4rem 0 0.9rem; }
+  .prose h3 { font-size:1rem; font-weight:600; color:var(--text); margin:1.4rem 0 0.5rem; }
+  .prose p { color:var(--soft); margin:0.75rem 0; }
+  .prose ul { color:var(--soft); margin:0.75rem 0 0.75rem 1.25rem; list-style:disc; }
+  .prose li { margin:0.4rem 0; }
+  .prose strong { color:var(--text); font-weight:600; }
+  .callout { background:rgba(232,116,42,0.08); border:1px solid rgba(232,116,42,0.28); border-radius:14px; padding:1.1rem 1.25rem; }
+  .callout p { color:var(--text); }
+</style>
+</head>
+<body>
+
+<nav class="sticky top-0 z-50" style="background:rgba(27,34,54,0.85); backdrop-filter:blur(10px); border-bottom:1px solid var(--line);">
+  <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-3" style="text-decoration:none;">
+      <svg viewBox="0 0 200 140" width="30" height="21" xmlns="http://www.w3.org/2000/svg" style="color:var(--gold)">
+        <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" transform="translate(100 128)">
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-68)" opacity="0.7"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(-34)" opacity="0.85"/>
+          <path d="M 0,0 C -14,-20 -18,-55 0,-105 C 18,-55 14,-20 0,0 Z"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(34)" opacity="0.85"/>
+          <path d="M 0,0 C -16,-20 -22,-55 0,-95 C 22,-55 16,-20 0,0 Z" transform="rotate(68)" opacity="0.7"/>
+        </g>
+      </svg>
+      <span class="wordmark text-2xl text-text">Padma</span>
+    </a>
+    <a href="/" class="text-sm text-soft">&larr; Back to site</a>
+  </div>
+</nav>
+
+<main class="max-w-xl mx-auto px-6 py-14">
+  <p class="font-display text-xs uppercase tracking-widest mb-3" style="color:var(--gold);">Text us</p>
+  <h1 class="font-display text-4xl font-bold mb-3">Stay in touch with Padma by text</h1>
+  <p style="color:var(--soft);">Leave your mobile number and we will text you about Padma: following up on our conversation, demo times, and answers to your questions. Prefer to start it yourself? Text us at <strong style="color:var(--text);">877-600-3707</strong>.</p>
+
+  <form id="optin" class="mt-8" style="display:grid; gap:1rem;">
+    <label style="display:grid; gap:0.35rem;">
+      <span class="text-sm" style="color:var(--soft);">Your name</span>
+      <input id="name" name="name" required autocomplete="name" maxlength="120" class="field">
+    </label>
+    <label style="display:grid; gap:0.35rem;">
+      <span class="text-sm" style="color:var(--soft);">Mobile number</span>
+      <input id="mobile" name="mobile" type="tel" required autocomplete="tel" class="field">
+    </label>
+    <div aria-hidden="true" style="position:absolute; left:-9999px;">
+      <label>Company site <input id="company_site" name="company_site" tabindex="-1" autocomplete="off"></label>
+    </div>
+    <label class="text-sm" style="display:grid; grid-template-columns:auto 1fr; gap:0.65rem; align-items:start; color:var(--soft); line-height:1.55;">
+      <input id="consent" name="consent" type="checkbox" required style="margin-top:0.25rem; width:18px; height:18px;">
+      <span>I agree to receive text messages from Padma, a service of DyGarn Technical Solutions, at this number. Message frequency varies. Message and data rates may apply. Reply STOP to cancel, HELP for help.</span>
+    </label>
+    <button type="submit" id="send" class="font-display" style="min-height:50px; border:none; border-radius:12px; background:var(--gold); color:#1b2236; font-weight:600; cursor:pointer;">Keep me posted</button>
+    <p id="status" role="status" class="text-sm" style="min-height:1.5em; color:var(--soft);"></p>
+  </form>
+
+  <p class="text-sm mt-6" style="color:var(--muted);">Agreeing is not a condition of buying anything. We do not sell mobile numbers or share them with third parties for their marketing. See our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms</a>.</p>
+</main>
+
+<style>
+  .field { width:100%; min-height:48px; border-radius:12px; padding:0 14px; font-size:16px; color:var(--text); background:var(--bgcard); border:1px solid var(--line); }
+  .field:focus-visible, #consent:focus-visible, #send:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+</style>
+<script>
+  document.getElementById('optin').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var button = document.getElementById('send');
+    var status = document.getElementById('status');
+    button.disabled = true;
+    status.textContent = 'Sending...';
+    try {
+      var res = await fetch('https://ops.dygarn.com/api/track/text-opt-in', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: document.getElementById('name').value,
+          mobile: document.getElementById('mobile').value,
+          consent: document.getElementById('consent').checked,
+          company_site: document.getElementById('company_site').value
+        })
+      });
+      var json = await res.json().catch(function () { return {}; });
+      if (!res.ok) throw new Error(json.error || 'Something went wrong. Please try again.');
+      e.target.reset();
+      status.textContent = 'Thanks. We have your number.';
+    } catch (err) {
+      status.textContent = err.message;
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+
+
+<footer class="border-t border-line py-10" style="background:var(--bgdeep);">
+  <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs" style="color:var(--muted);">
+    <span>&copy; 2026 DyGarn Technical Solutions. Padma and the Padma lotus are trademarks of DyGarn Technical Solutions.</span>
+    <div class="flex items-center gap-5">
+      <a href="/" style="color:var(--muted);">Home</a>
+      <a href="/privacy" style="color:var(--muted);">Privacy</a>
+      <a href="/terms" style="color:var(--muted);">Terms</a>
+      <a href="/text" style="color:var(--soft);">Text us</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
