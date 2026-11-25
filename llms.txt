@@ -52,3 +52,9 @@ Owner-operators, operations leads, and IT leads at electrical and lighting manuf
 
 ## Key Pages
 - Home / landing: https://padmahq.com/
+- Frequently asked questions: https://padmahq.com/#faq
+- Full plain-text description for AI tools: https://padmahq.com/llms-full.txt
+- Privacy: https://padmahq.com/privacy
+- Terms: https://padmahq.com/terms
+
+Last updated: 2026-11-24

@@ -476,6 +476,10 @@ tailwind.config = {
     },
     {
       "@type": "SoftwareApplication",
+      "@id": "https://padmahq.com/#software",
+      "applicationSubCategory": "Manufacturer rep agency management software (CRM, quoting, commissions)",
+      "audience": { "@type": "BusinessAudience", "audienceType": "Electrical and lighting manufacturer rep agencies" },
+      "featureList": ["CRM and opportunity pipeline", "Multi-distributor quoting", "Manufacturer price lists and SPAs", "Quote-to-order and purchase orders", "Buy / sell and commission-only lines", "Submittals with branded cover and cut sheets", "Commission tracking", "Manufacturer goals and budgets", "Project management from spec to install", "Email and document intake", "Direct manufacturer integrations", "Phone app for outside reps"],
       "name": "Padma",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
@@ -493,9 +497,20 @@ tailwind.config = {
     },
     {
       "@type": "WebSite",
+      "@id": "https://padmahq.com/#website",
       "url": "https://padmahq.com/",
       "name": "Padma",
       "publisher": { "@id": "https://padmahq.com/#org" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://padmahq.com/#webpage",
+      "url": "https://padmahq.com/",
+      "name": "Padma - software for electrical and lighting manufacturer rep agencies",
+      "isPartOf": { "@id": "https://padmahq.com/#website" },
+      "about": { "@id": "https://padmahq.com/#software" },
+      "inLanguage": "en-CA",
+      "dateModified": "2026-11-24"
     },
     {
       "@type": "FAQPage",
@@ -845,8 +860,8 @@ tailwind.config = {
           Submittal-ready<br>in seconds.<br><span class="text-gold">Your brand on every page.</span>
         </h2>
         <!-- SCREENSHOT SLOT: drop two real branded submittal preview images here.
-             screenshot-submittal.png      → cover page (left/top)
-             screenshot-submittal-page.png → cut-sheet inner page (right/bottom)
+             screenshot-submittal.png      -> cover page (left/top)
+             screenshot-submittal-page.png -> cut-sheet inner page (right/bottom)
              Side-by-side on desktop, stacked on mobile. Both rendered framed
              like the device mock. Remove the inline style="display:none" when ready. -->
         <div class="my-10 -mx-2 sm:mx-0 grid grid-cols-1 md:grid-cols-2 gap-6 md:-ml-24 md:-mr-24">
